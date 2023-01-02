@@ -1,2 +1,2 @@
-# javascript
-script das aulas
+# javascript dentro do HTML
+script das aulas 
