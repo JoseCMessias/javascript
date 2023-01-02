@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>20 - Exercicio</title>
+
+    <!-- JS -->
+    <script>
+
+        //Obter Média
+        function obterMedia()
+        {
+            // Obter as notas
+            var nota1 = parseFloat(document.getElementById("nota1").value)
+            var nota2 = parseFloat(document.getElementById("nota2").value)
+
+            // Realizar o cálculo damédia
+            var media = calculo(nota1, nota2)
+
+            // Verificar a situação do aluno
+            var condicao = situacao(media)
+
+            // Mensagem
+            document.write("A média é "+ media + " é sua situação é "+ condicao)
+        }
+
+        // Cálculo de Média
+        function calculo(nota1, nota2)
+        {
+            // Cálculo
+            return(nota1 + nota2) / 2
+        }
+
+        // Situação
+        function situacao(media)
+        {
+            // Condicional
+            return media >= 7 ? "Aprovado" : "Reprovado"
+        }
+
+    </script>
+</head>
+<body>
+
+    <!-- Formulário -->
+    <input type="text" placeholder="Informe a primeira nota1" id="nota1">
+    <input type="text" placeholder="Informe a primeira nota2" id="nota2">
+    <button onclick="obterMedia()">Calcular</button>
+
+</body>
+</html>

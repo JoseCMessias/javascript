@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>08 - Condicional Encadeada</title>
+
+    <!-- JS -->
+    <script>
+       
+       // Média 7
+       var media = prompt("Informe a Média do aluno")
+
+       // Condicional
+       if(media == 10 || media <= 10)
+       {
+            if(media == 10)
+            {
+                document.write("Aprovado com louvor!")
+            }
+            else if(media >= 9)
+            {
+                document.write("ótimo!!")
+            }
+            else if(media >= 8)
+            {
+                document.write("Bom!")
+            }
+            else if(media >= 7)
+            {
+                document.write("Na média!")
+            }
+            else if(media >= 5)
+            {
+                document.write("Em exame!")
+            }
+            else
+            {
+                document.write("Reprovado!")
+            }
+       }
+       else{
+        document.write("Média inválido")
+       }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

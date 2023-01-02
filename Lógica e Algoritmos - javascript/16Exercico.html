@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>16 - Exercicio </title>
+
+    <!-- JS -->
+    <script>
+
+        //* Desenvolver um sistema onde o usuário informa um número, em seguida exiba a tabuada daquele número *//
+
+        var valor = parseFloat(prompt("Informe o valor para criar a sua Tabuada "))
+        var indice = 0
+        var operacao  = prompt("Informe a operação")
+2
+        while(indice < 10)
+        {
+            if(operacao == "+"){
+                document.write(valor+ " + " +indice+ " = " +(valor + indice) +"<br>")
+                indice++
+            }     
+            if(operacao == "-"){
+                document.write(valor+ " - " +indice+ " = " +(valor - indice) +"<br>")
+                indice++
+            }  
+            if(operacao == "*"){
+                document.write(valor+ " * " +indice+ " = " +(valor * indice) +"<br>")
+                indice++
+            }  
+            if(operacao == "/"){
+                document.write(valor+ " / " +indice+ " = " +(valor / indice) +"<br>")
+                indice++
+            }      
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
